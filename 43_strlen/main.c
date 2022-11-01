@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    // 使用strlen函数获取字符串长度
+    // strlen获取的字符串的长度遇到第一个\0结束
+    char s1[100] = "hello";
+    printf("s1_len = %d\n",strlen(s1));
+    printf("s1_size = %d\n",sizeof(s1));
+
+    char *s2 = "hello";
+    printf("s2_len = %d\n",strlen(s2));
+    printf("s2_size = %d\n",sizeof(s2));
+    return 0;
+}
